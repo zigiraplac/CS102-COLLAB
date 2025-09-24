@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Method {
     public static Integer arrayMaxFinder(int arr[]){
         int value = 0;
@@ -46,6 +48,7 @@ public class Method {
         for (int i = 0; i < arr.length; i++){
             differences[i] = arr[i] - average;
         }
+        System.out.println("The Average is: " + average);
         System.out.println("The difference from average array is: " + Arrays.toString(differences));
     }
 }
