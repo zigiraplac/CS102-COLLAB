@@ -20,6 +20,22 @@ public class Method {
         }
         return value;
     }
+    public static int[] findTotalEvenOdd(int[] arr){
+        int totalEven = 0;
+        int totalOdd = 0;
+        int[] evenandodd = new int[2];
+        for ( int i = 0; i < arr.length; i++ ){
+            if ( i % 2 == 0){
+                totalEven += arr[i];               
+            }
+            else {
+                totalOdd += arr[i];
+            }
+        }
+        evenandodd[0] = totalEven;
+        evenandodd[1] = totalOdd;
+        return evenandodd;
+    }
     public static void averageDifference(int[] arr){
         int total = 0;
         for (int val : arr){
@@ -33,4 +49,5 @@ public class Method {
         System.out.println("The difference from average array is: " + Arrays.toString(differences));
     }
 }
+
 
