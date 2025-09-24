@@ -20,4 +20,17 @@ public class Method {
         }
         return value;
     }
+    public static void averageDifference(int[] arr){
+        int total = 0;
+        for (int val : arr){
+            total += val;
+        }
+        int average = total / arr.length;
+        int differences[] = new int[arr.length];
+        for (int i = 0; i < arr.length; i++){
+            differences[i] = arr[i] - average;
+        }
+        System.out.println("The difference from average array is: " + Arrays.toString(differences));
+    }
 }
+
